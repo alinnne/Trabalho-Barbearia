@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento de Serviço</title>
+  <link rel="stylesheet" href="estilos/style-servicos.css">
+</head>
+<body>
+
+    <img id="fundoApp" src="/midia/fundo-galeria.png" alt="">
+
+    <nav>
+        <div class="menu-items">
+          <a href="/index.html">Início</a>
+          <a href="Equipe.html">Equipe</a>
+          <a href="trabalhosRealizados.html">trabalhos Realizados</a>
+          <a href="agendamento.html">agendamentos</a>
+          <a href="login.html">Login</a>
+        </div>
+    </nav>
+  <div class="container">
+    <h1>Agende o Seu Serviço</h1>
+    <form action="#" method="POST" class="form">
+      <label for="data">Data do Agendamento:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="hora">Hora do Agendamento:</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <label for="servico">Tipo de Serviço:</label>
+      <select id="servico" name="servico" required>
+        <option value="" disabled selected>Escolha o tipo de serviço</option>
+        <option value="corte">Corte de Cabelo</option>
+        <option value="barba">Barba</option>
+
+      </select>
+
+      <button type="submit">Agendar</button>
+    </form>
+  </div>
+</body>
+</html>
